@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consult a Doctor</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <header>
+        <h1>Consult a Doctor</h1>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Get Expert Medical Advice</h2>
+            <p>Our platform connects you with licensed doctors for consultation and provides AI-driven assistance and medicine suggestions based on your needs.</p>
+        </section>
+
+        <section id="ai-assistant">
+            <h2>AI Health Assistant</h2>
+            <div id="ai-chat">
+                <!-- Chatbot Interface -->
+                <iframe src="chatbot.html" title="AI Health Assistant" width="100%" height="400px"></iframe>
+            </div>
+        </section>
+
+        <section id="doctor-call">
+            <h2>Schedule a Call with a Doctor</h2>
+            <form id="call-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="issue">Issue:</label>
+                <textarea id="issue" name="issue" rows="4" required></textarea>
+
+                <label for="date">Preferred Date and Time:</label>
+                <input type="datetime-local" id="date" name="date" required>
+
+                <button type="submit" class="btn-primary">Schedule Call</button>
+            </form>
+        </section>
+
+        <section id="emergency-medicine">
+            <h2>Emergency Medicine Suggestions</h2>
+            <form id="emergency-form">
+                <label for="symptoms">Describe Your Symptoms:</label>
+                <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+
+                <button type="submit" class="btn-primary">Get Suggestions</button>
+            </form>
+            <div id="suggestions"></div>
+        </section>
+
+        <section id="resources">
+            <h2>Additional Resources</h2>
+            <p>Explore other helpful resources for managing your health and well-being:</p>
+            <ul>
+                <li><a href="https://www.webmd.com" target="_blank">WebMD</a></li>
+                <li><a href="https://www.mayoclinic.org" target="_blank">Mayo Clinic</a></li>
+                <li><a href="https://www.nhs.uk" target="_blank">NHS</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mental Health Support Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="doctor.js"></script>
+</body>
+</html>
